@@ -4,32 +4,55 @@ import Buttons from './Buttons'
 
 
 const Todo = () => {
-  return (
-    <div>
-<div className={todo.todo}>
-<div className={todo.list}>
-  <ul>
-   <li>Read a book<FaTimes></FaTimes></li> 
-   <li>Take a nap <FaTimes></FaTimes></li>
-   <li>Wash Plates <FaTimes></FaTimes></li>
-   <li>Cook <FaTimes></FaTimes></li>
-   <li>Eat<FaTimes></FaTimes></li>
-   <li>Code<FaTimes></FaTimes></li>
-   <li>Watch a Movie<FaTimes></FaTimes></li>
-   <li>code<FaTimes></FaTimes></li>
-   <li>Sleep<FaTimes></FaTimes></li>
-  </ul>
-</div>
+    const myTodo = [
+        {
+            name: "Purpose in life"
 
-<div className={todo.button}>
-<Buttons title='ADD'/>
-</div>
+        },
+
+        {
+            name: "how to make money"
+        },
+        {
+            name: "This Life"
+        },
+        {
+            name: "Until Reality Dawn on You"
+        },
+        {
+            name: "what will be ,will be"
+        },
+        {
+            name: "How life work"
+        },
+        {
+            name: "This Life ,have money"
+        },
+
+    ]
+    return (
+        <div>
+            <div className={todo.todo}>
+                <div className={todo.list}>
+                    <ul>
+
+                        {
+                            myTodo.map((todo, index) => {
+                                return <li>{(todo.name)}<FaTimes></FaTimes></li>
+                            })
+                        }
+                    </ul>
+                </div>
+
+                <div className={todo.button}>
+                    <Buttons title='ADD' />
+                </div>
 
 
 
-</div>
-    </div>
-  )
+            </div>
+        </div>
+    )
 }
 
 export default Todo
