@@ -15,4 +15,18 @@ button{
     h2{
         margin-top: 0.4rem;
     }
+
+   
+}
+
+ul{
+    list-style: none;
+    cursor: pointer;
+   
+    li{
+        font-size: 23px;
+         letter-spacing: 3px;
+         display: flex;
+         justify-content: space-between;
+    }
 }
