@@ -11,32 +11,6 @@ const Todo = () => {
     const url = "https://jsonplaceholder.typicode.com/users"
 
 const [data, setData] = useState([])
-const [task , tasks] = useState(
-    [
-        {
-           id: 1,
-           text: 'Going to code at IT plaza',
-           day: ' jun 20, 9:00am',
-           reminder: true,
-        },
- 
-        {
-           id: 2,
-           text: 'Going to gym',
-           day: ' jun 20, 5:30pm',
-           reminder: true,
-        },
- 
-        {
-           id: 3,
-           text: 'Going to code at home 9:30pm',
-           day: ' jun 20, 9:00pm',
-           reminder: false,
-        }
- 
-     ]
-  )
-
 
 
 const fetchInfo = () => {
@@ -61,12 +35,15 @@ const removeArrayList = (listOf) => {
       setData(remove)
 }
 
-const addArrayList = (newArray) => {
-   const add = data.push((i) => (i.index ))
+// const addArrayList = (newArray) => {
+//    const add = data.push((i) => (i.index ))
 
-console.log(add)
+// console.log(add)
 
-}
+// }
+
+
+
 
     return (
         <div>
@@ -85,10 +62,10 @@ console.log(add)
                     </ul>
                 </div>
 
-                <input type="text" placeholder='Add A Task Here'/>
+                {/* <input type="text" placeholder='Add A Task Here'/> */}
 
                 <div className={todo.button}>
-                    <Buttons title='ADD' onClick={addArrayList(todo.id)}/>
+                    <Buttons title='ADD'/>
                 </div>
 
 
