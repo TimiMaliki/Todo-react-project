@@ -6,7 +6,7 @@ const Buttons = (props) => {
     work : "wash Plates"
 }
 const [work , setWork] = useState(['sleep'])
-
+ 
 const mytask = () => {
   setWork(current => [...current , "eat"])
 }
@@ -14,7 +14,7 @@ const mytask = () => {
   return (
     <div>
       <ul>
-       {work.map((task , index) => {
+       {work.map((work , index) => {
 
           return <li  key={work.id}>{(work)}</li>
        })}
