@@ -62,7 +62,7 @@ const removeArrayList = (listOf) => {
                     </ul>
                 </div>
 
-                {/* <input type="text" placeholder='Add A Task Here'/> */}
+              
 
                 <div className={todo.button}>
                     <Buttons title='ADD'/>
